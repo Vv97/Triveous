@@ -14,12 +14,6 @@ interface AuthContext {
   logout: () => void;
 }
 
-// export interface NewsArticle {
-//   status: string;
-//   totalResults: number;
-//   articles: NewsArticleItem[];
-// }
-
 export interface NewsArticleItem {
   source: {
     id: string;
