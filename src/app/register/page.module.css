@@ -1,0 +1,95 @@
+.register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  margin-top: 80px;
+}
+
+.registerContainer {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
+
+.registerContainer > h1 {
+  text-align: center;
+  padding: 25px;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 20px 25px;
+  gap: 15px;
+}
+
+.signupForm > label {
+  display: flex;
+  font-size: 1.3rem;
+  color: #363636;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signupForm > label > input,
+.signupForm > input {
+  outline: none;
+  width: 320px;
+  border: 2px solid #e7e7e7;
+  border-radius: 5px;
+  height: 39px;
+  padding-left: 10px;
+  font-size: 1rem;
+  color: #363636;
+}
+
+.signupForm > input[type="submit"] {
+  margin-top: 10px;
+  background-color: #ef4f5f;
+  border: none;
+  height: 48px;
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.usertext {
+  padding: 15px 20px 20px 25px;
+}
+
+.usertext > a {
+  color: #ef4f5f;
+  cursor: pointer;
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+  .register {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signupForm {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+}
+
+/* Adjust input width and font size for smaller screens */
+@media (max-width: 320px) {
+  .signupForm label input,
+  .signupForm input[type="submit"] {
+    width: 100%; /* Make inputs full width */
+  }
+
+  .signupForm label input {
+    font-size: 1.1rem; /* Adjust font size */
+  }
+
+  .signupForm input[type="submit"] {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+}
